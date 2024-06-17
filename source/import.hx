@@ -1,0 +1,3 @@
+import flixel.*;
+
+import debug.*;

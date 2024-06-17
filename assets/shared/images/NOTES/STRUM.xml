@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="STRUM.png" width="1112" height="226">
+  <SubTexture name="STATIC0000" x="658" y="0"  width="157" height="154" frameX="-0" frameY="-0" frameWidth="157" frameHeight="154"/>
+  <SubTexture name="CONFIRM0000" x="0" y="0"  width="227" height="226" frameX="-3" frameY="-1" frameWidth="236" frameHeight="232"/>
+  <SubTexture name="CONFIRM0001" x="227" y="0"  width="227" height="226" frameX="-3" frameY="-1" frameWidth="236" frameHeight="232"/>
+  <SubTexture name="CONFIRM0002" x="454" y="0"  width="204" height="205" frameX="-15" frameY="-12" frameWidth="236" frameHeight="232"/>
+  <SubTexture name="CONFIRM0003" x="454" y="0"  width="204" height="205" frameX="-15" frameY="-12" frameWidth="236" frameHeight="232"/>
+  <SubTexture name="PRESSED0000" x="968" y="0"  width="144" height="141" frameX="-5" frameY="-4" frameWidth="153" frameHeight="150"/>
+  <SubTexture name="PRESSED0001" x="968" y="0"  width="144" height="141" frameX="-5" frameY="-4" frameWidth="153" frameHeight="150"/>
+  <SubTexture name="PRESSED0002" x="815" y="0"  width="153" height="150" frameX="-0" frameY="-0" frameWidth="153" frameHeight="150"/>
+  <SubTexture name="PRESSED0003" x="815" y="0"  width="153" height="150" frameX="-0" frameY="-0" frameWidth="153" frameHeight="150"/>
+</TextureAtlas>
