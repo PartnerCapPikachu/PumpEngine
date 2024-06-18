@@ -4,17 +4,20 @@ class PlayState extends FlxState {
 
 	public var camHUD:FlxCamera;
 
-	public var strumLineNotes:FlxSpriteGroup;
-	public var opponentStrums:FlxSpriteGroup;
-	public var playerStrums:FlxSpriteGroup;
+	public var strumLineNotes:FlxSpriteGroup<StrumNote>;
+	public var opponentStrums:FlxSpriteGroup<StrumNote>;
+	public var playerStrums:FlxSpriteGroup<StrumNote>;
 
 	override public function create():Void {
 
 		FlxG.cameras.add(camHUD = new FlxCamera());
 		camHUD.bgColor = 0xff00ff00;
 
-		add(strumLineNotes = new FlxSpriteGroup());
+		add(strumLineNotes = new FlxSpriteGroup<StrumNote>());
 		strumLineNotes.cameras = [camHUD];
+
+		opponentStrums = new FlxSpriteGroup<StrumNote>();
+		playerStrums = new FlxSpriteGroup<StrumNote>();
 
 		for (i in 0...8) {
 
