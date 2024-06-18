@@ -2,8 +2,9 @@
 import flixel.*;
 import flixel.group.*;
 
-import debug.*;
+import animation.*;
 import backend.*;
+import debug.*;
 import objects.*;
 import objects.notes.*;
 

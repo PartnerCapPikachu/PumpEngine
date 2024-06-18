@@ -14,6 +14,8 @@ class StrumNote extends FlxSprite {
     angle = (noteData = d) == 1 ? 180 : d == 2 ? 0 : d == 3 ? 90 : -90;
     player = p;
 
+    animation = new PsychAnimationController(this);
+
     frames = Paths.getSparrowAtlas('NOTES/STRUM');
     animation.addByPrefix('static', 'STATIC', 1, true);
     animation.addByPrefix('confirm', 'CONFIRM', 24, false);
