@@ -1,5 +1,6 @@
 package;
 
+import objects.notes.StrumNote;
 import openfl.Lib.current as curLib;
 
 class Main extends openfl.display.Sprite {
