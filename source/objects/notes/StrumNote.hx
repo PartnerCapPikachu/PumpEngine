@@ -7,17 +7,16 @@ class StrumNote extends FlxSprite {
   public var noteData:Int;
   public var player:Int;
 
-  public function new(d:Int, p:Int):Void {
+  public function new(noteDataOfStrum:Int, isPlayer:Int):Void {
 
     super();
 
-    angle = (noteData = d) == 1 ? 180 : d == 2 ? 0 : d == 3 ? 90 : -90;
-    player = p;
-
-    animation = new PsychAnimationController(this);
+    angle = (noteData = noteDataOfStrum) == 1 ? 180 : noteData == 2 ? 0 : noteData == 3 ? 90 : -90;
+    player = isPlayer;
 
     frames = Paths.getSparrowAtlas('NOTES/STRUM');
-    animation.addByPrefix('static', 'STATIC', 1, true);
+    animation = new PsychAnimationController(this);
+    animation.addByPrefix('static', 'STATIC', 1);
     animation.addByPrefix('confirm', 'CONFIRM', 24, false);
     animation.addByPrefix('pressed', 'PRESSED', 24, false);
     animation.play('static');
